@@ -1,0 +1,118 @@
+* {
+    border: 0px;
+    margin: 0px;
+}
+
+h2 {
+    font-family: Arial;
+}
+
+.display {
+    display: flex;
+}
+
+header {
+    background-image: linear-gradient(to top, orange, #f0c14b);
+    padding: 1%;
+    display: flex;
+    flex-direction: column;
+}
+table {
+    width: 80%;
+    border-collapse: collapse;
+    margin: auto;
+    margin-top: 20px;
+    border: 1px solid #ccc;
+  }
+  
+  th, td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #ccc;
+  }
+  
+  th {
+    background-color: #f2f2f2;
+  }
+
+.botao-quadrado {
+    width: 350px;
+    height: 150px;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    border: none;
+    border-radius: 10px;
+    transition: background-color 0.3s ease;
+    margin: 3%;
+    margin: 10px 110px 10;
+}
+
+.botao-quadrado:hover {
+    background-color: #f0c14b;
+
+}
+
+.primeiro_nav-link {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+#barra {
+    border-right: 1px solid black;
+    border-left: 1px solid black;
+    padding-right: 3px;
+    padding-left: 3px;
+}
+
+main {
+    background-color: antiquewhite;
+    padding: 1vw;
+}
+
+#user {
+    border-radius: 30px;
+}
+
+.centro {
+    display: flex;
+}
+
+.quadrado {
+    text-align: left;
+    width: 500px;
+    padding: 6vh;
+    border: 3px solid black;
+
+}
+
+.emergencia {
+    text-align: right;
+    align-items: right;
+    justify-content: right;
+    padding-left: 83%;
+}
+
+.container {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    animation: fadeIn 1s ease;
+    align-items: center;
+    align-self: center;
+    align-content: center;
+}
+
+
+footer {
+    background-image: linear-gradient(to top, orange, #f0c14b);
+}

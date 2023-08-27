@@ -1,0 +1,232 @@
+*{
+    border: 0px;
+    margin: 0px;
+}
+
+header{
+    background-image: linear-gradient(to top, orange, #f0c14b);
+    padding: 1%;
+    display: flex;
+    flex-direction: column;
+}
+
+.primeiro_nav-link{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+a{
+    color: black;
+    text-decoration: none;
+}
+
+#barra{
+    border-right: 1px solid black;
+    border-left: 1px solid black;
+    padding-right: 3px;
+    padding-left: 3px;
+}
+
+main{
+    background-color: antiquewhite;
+    padding: 1vw;
+}
+
+#titulo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.esquerda{
+    align-items: center;
+    justify-content: left;
+    padding-right: 4vh;
+}    
+
+.direita{
+    align-items: center;
+    justify-content: right;
+    padding-left: 4vh;
+}
+
+
+.cadastro{
+    background-image: linear-gradient(to top, orange, #f0c14b);
+    align-items: center;
+    justify-content: center;
+    border-style:ridge;
+    padding: 10px 35px; 
+    width: 350px;
+    margin: 0 auto;
+    border-color: #d3cbcb;
+    border-radius: 20px;
+    padding-bottom: 2vh;
+}
+
+.cadastro2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-style:ridge;
+    padding: 10px 35px; 
+    width: 350px;
+    margin: 0 auto;
+    border-color: #d3cbcb;
+    border-radius: 20px;
+    padding-bottom: 2vh;
+}
+
+p{
+   padding-top: 2vh;
+}
+
+#Nov_reg{
+    width: 100px;
+    height: 30px;
+    border-radius: 6px;
+}
+
+.imput{
+    width: 350px;
+    height: 30px;
+    border-radius: 6px;
+} 
+
+.input{
+    width: 200px;
+    height: 20px;
+    border-radius: 6px;
+}
+.blocos{
+    width: 100%;
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+}
+
+.bloco1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-left: 5vh;
+    border: 2px solid #393939;
+    background-color:antiquewhite;
+    border-radius: 5px;
+    height: 30vh;
+    width: 50vh;
+    margin-top: 10vh;
+
+}
+
+.bloco2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid #393939;
+    background-color:antiquewhite;
+    border-radius: 5px;
+    height: 30vh;
+    width: 50vh;
+    margin-top: 10vh;
+
+}
+
+.bloco3{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-right: 5vh;
+    border: 2px solid #393939;
+    background-color:antiquewhite;
+    border-radius: 5px;
+    height: 30vh;
+    width: 50vh;
+    margin-top: 10vh;
+}
+
+.nog{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid #393939;
+    background-color:antiquewhite;
+    border-radius: 5px;
+    height: 50vh;
+    width: 40vh;
+    margin-top: 10vh;
+    margin-left: 20vh;
+}
+
+.pog{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid #393939;
+    background-color:antiquewhite;
+    border-radius: 5px;
+    height: 50vh;
+    width: 40vh;
+    margin-top: 10vh;
+}
+
+.sog{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid #393939;
+    background-color:antiquewhite;
+    border-radius: 5px;
+    height: 50vh;
+    width: 40vh;
+    margin-top: 10vh;
+    margin-right: 20vh;
+}
+
+footer{
+    background-image: linear-gradient(to top, orange, #f0c14b);
+
+}
+.buy-button {
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    background-color: #ffee38;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 35px;
+    transition: background-color 0.3s ease;
+    margin-left: 255px;
+}
+
+.buy-button:hover {
+    background-color: #dfbb06; /* Efeito hover vermelho mais escuro */
+}
+.buy-buttonum {
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    background-color: #ffee38;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 35px;
+    transition: background-color 0.3s ease;
+    margin-right: 160px;
+}
+
+.buy-buttonum:hover {
+    background-color: #dfbb06; /* Efeito hover vermelho mais escuro */
+}
+.bl{
+    display:flex ;
+}
