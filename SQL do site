@@ -1,0 +1,135 @@
+CREATE TABLE Paciente 
+( 
+ N° cartão SUS INT PRIMARY KEY,  
+ N° NIS INT,  
+ Nome CHAR(n) NOT NULL,  
+ Ser chamado INT,  
+ Nome companheiro CHAR(n),  
+ Data nascimento DATE,  
+ Raça/cor CHAR(n),  
+ Trabalha fora CHAR(n),  
+ CEP INT,  
+ Telefone INT,  
+ Telefone emergência INT,  
+ Nome emergência INT,  
+); 
+
+CREATE TABLE Consulta 
+( 
+ idPaciente INT,  
+ Data DATE,  
+ idProfissional da saúde INT,  
+); 
+
+CREATE TABLE Profissional da saúde 
+( 
+ CRM INT PRIMARY KEY,  
+ Nome CHAR(n),  
+ Função CHAR(n),  
+); 
+
+CREATE TABLE Exames 
+( 
+ ID DATE PRIMARY KEY,  
+ Data DATE,  
+ idProfissional da saúde INT,  
+ idPaciente INT,  
+ Tipo CHAR(n),  
+ Resultado CHAR(n),  
+); 
+
+CREATE TABLE Antecedentes familiares 
+( 
+ idPaciente INT,  
+ Diabetes CHAR(n),  
+ Hipertensão CHAR(n),  
+ Gemelar CHAR(n),  
+ Outros CHAR(n),  
+); 
+
+CREATE TABLE Gestação 
+( 
+ idAntecedentes familiares INT,  
+ N° parto INT,  
+ Tipo parto CHAR(n),  
+ N° nascidos vivos INT,  
+ N° abortos INT,  
+ Peso bebê INT,  
+ N° pré-eclâmp INT,  
+); 
+
+CREATE TABLE Vacinas 
+( 
+ Tipo CHAR(n),  
+ Data DATE,  
+ N° doses INT,  
+ idPaciente INT,  
+); 
+
+CREATE TABLE Antecedentes clínicos obstétricos 
+( 
+ Diabetes INT,  
+ Infecção urinária INT,  
+ Infertilidade INT,  
+ Dific. amamentação INT,  
+ Cardiopatia INT,  
+ Tromboembolismo INT,  
+ HIpertensão INT,  
+ Cirurgia INT,  
+ Outros INT,  
+ idPaciente INT,  
+); 
+
+CREATE TABLE Gestação atual 
+( 
+ Fumo/N° cigarros INT,  
+ Álcool INT,  
+ Drogas INT,  
+ Violência doméstica INT,  
+ HIV/aids INT,  
+ Sífilis INT,  
+ Toxoplasmose INT,  
+ Infecção urinária INT,  
+ Anemia INT,  
+ Inc. istmocervical INT,  
+ Ameaça de parto premat. INT,  
+ Isoimunização Rh INT,  
+ Oligo/polidrâmnio INT,  
+ Rut. prem. membrana INT,  
+ CIUR INT,  
+ Pós-datismo INT,  
+ idPaciente INT,  
+ Febre INT,  
+ Hipertensão INT,  
+ Pré-eclâmp/eclâmp. INT,  
+ Cardiopatia INT,  
+ Diabetes gestacional INT,  
+ Uso de insulina INT,  
+ Hemorragia INT,  
+ Data-hemorragia INT,  
+ Exantema/rash cutâneo INT,  
+ Tipo INT,  
+); 
+
+CREATE TABLE Parto 
+( 
+ Peso bebê INT,  
+ Nascido vivo INT,  
+ Tipo do parto INT,  
+ Sangramento INT,  
+ Intercorrências INT,  
+ Medicamentos INT,  
+ Apgr 1°/5° minuto INT,  
+ idGestação atual INT,  
+); 
+
+ALTER TABLE Consulta ADD FOREIGN KEY(idPaciente) REFERENCES Paciente (idPaciente)
+ALTER TABLE Consulta ADD FOREIGN KEY(idProfissional da saúde) REFERENCES Profissional da saúde (idProfissional da saúde)
+ALTER TABLE Exames ADD FOREIGN KEY(idProfissional da saúde) REFERENCES Profissional da saúde (idProfissional da saúde)
+ALTER TABLE Exames ADD FOREIGN KEY(idPaciente) REFERENCES Paciente (idPaciente)
+ALTER TABLE Antecedentes familiares ADD FOREIGN KEY(idPaciente) REFERENCES Paciente (idPaciente)
+ALTER TABLE Gestação ADD FOREIGN KEY(idAntecedentes familiares) REFERENCES Antecedentes familiares (idAntecedentes familiares)
+ALTER TABLE Vacinas ADD FOREIGN KEY(idPaciente) REFERENCES Paciente (idPaciente)
+ALTER TABLE Antecedentes clínicos obstétricos ADD FOREIGN KEY(idPaciente) REFERENCES Paciente (idPaciente)
+ALTER TABLE Gestação atual ADD FOREIGN KEY(idPaciente) REFERENCES Paciente (idPaciente)
+ALTER TABLE Parto ADD FOREIGN KEY(idGestação atual) REFERENCES Gestação atual (idGestação atual)
